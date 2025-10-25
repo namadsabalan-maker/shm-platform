@@ -3,88 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سامانه پایش سلامت سازه‌ها</title>
+    <title>سامانه پایش سلامت سازه‌ها - StructHealth</title>
     <style>
         body {
             font-family: Tahoma, Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+        }
+        .header {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
             text-align: center;
         }
         .container {
-            max-width: 800px;
-            margin: 100px auto;
+            max-width: 1000px;
+            margin: 50px auto;
             padding: 40px;
+        }
+        .features {
+            display: flex;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .feature {
             background: rgba(255,255,255,0.1);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            text-align: center;
         }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+        .cta-buttons {
+            text-align: center;
+            margin: 40px 0;
         }
-        .cta-button {
+        .btn {
             display: inline-block;
             background: #ff6b6b;
             color: white;
             padding: 15px 30px;
+            margin: 10px;
             text-decoration: none;
             border-radius: 50px;
-            font-size: 1.2em;
-            margin: 20px;
-            transition: transform 0.3s;
+            font-size: 18px;
         }
-        .cta-button:hover {
-            transform: translateY(-5px);
-        }
-        .features {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 40px 0;
-        }
-        .feature {
-            background: rgba(255,255,255,0.2);
-            padding: 20px;
-            border-radius: 10px;
-            flex: 1;
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo">🏗️ StructHealth</div>
+    </div>
+
     <div class="container">
-        <h1>🏗️ سامانه هوشمند پایش سلامت سازه‌ها</h1>
-        <p style="font-size: 1.3em; margin-bottom: 30px;">
-            نظارت ۲۴ ساعته بر پل‌ها و ساختمان‌ها با هوش مصنوعی
+        <h1 style="text-align: center; font-size: 2.5em;">سامانه هوشمند پایش سلامت سازه‌ها</h1>
+        <p style="text-align: center; font-size: 1.3em; opacity: 0.9;">
+            نظارت ۲۴ ساعته بر پل‌ها و ساختمان‌ها با ۶ الگوریتم پیشرفته هوش مصنوعی
         </p>
-        
+
         <div class="features">
             <div class="feature">
                 <h3>🔍 تشخیص ناهنجاری</h3>
-                <p>شناسایی خودکار مشکلات سازه‌ای</p>
+                <p>شناسایی خودکار مشکلات سازه‌ای با دقت ۹۵٪</p>
             </div>
             <div class="feature">
                 <h3>⏰ هشدار لحظه‌ای</h3>
-                <p>اطلاع‌رسانی فوری از طریق پیامک</p>
+                <p>اطلاع‌رسانی فوری از طریق پیامک و تلگرام</p>
             </div>
             <div class="feature">
-                <h3>📊 گزارش‌گیری حرفه‌ای</h3>
-                <p>دشبورد مدیریت و آنالیز داده‌ها</p>
+                <h3>📊 دشبورد حرفه‌ای</h3>
+                <p>مدیریت و آنالیز داده‌ها به صورت Real-time</p>
             </div>
         </div>
 
-        <a href="tel:+989120000000" class="cta-button">
-            📞 درخواست دمو رایگان
-        </a>
-        <br>
-        <a href="mailto:demo@shm-service.ir" class="cta-button">
-            ✉️ ارسال ایمیل
-        </a>
+        <div class="cta-buttons">
+            <a href="tel:09120000000" class="btn">📞 تماس برای دمو رایگان</a>
+            <a href="mailto:info@structhealth.ir" class="btn">✉️ درخواست پیشنهاد قیمت</a>
+        </div>
 
-        <div style="margin-top: 40px; font-size: 0.9em; opacity: 0.8;">
-            <p>پشتیبانی از ۶ الگوریتم پیشرفته هوش مصنوعی</p>
+        <div style="text-align: center; margin-top: 50px; opacity: 0.7;">
+            <p>✅ پشتیبانی از ۶ مدل Machine Learning | ✅ پردازش Real-time | ✅ گزارش‌گیری خودکار</p>
         </div>
     </div>
 </body>
